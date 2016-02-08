@@ -7,8 +7,12 @@ var express = require('express'),
 var app = module.exports = express.Router();
 
 app.get('/', function(req, res) {
-  return res.status(400).send("testing");
-  //userSV.senddefault()
+  return res.status(400).sendfile("index.html");
+});
+
+app.get('/*', function(req, res) {
+  //return res.status(400).send(req.params[0]);
+  return res.status(400).send(userSV.digesttime(req.params[0]));
 });
 
 // XXX: This should be a database of users :).

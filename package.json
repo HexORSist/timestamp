@@ -10,11 +10,6 @@
   "authors": [
     "Chad Schmidt <cschmidtok@gmail.com>"
   ],
-  "browserify": {
-    "transform": [
-      "babelify"
-    ]
-  },
   "scripts": {
     "start": "node server.js"
   },
@@ -29,8 +24,8 @@
     "dotenv": "^0.4.0",
     "errorhandler": "^1.1.1",
     "express": "^4.8.5",
-    "lodash": "^2.4.1"
+    "lodash": "^2.4.1",
+    "moment": "^2.11.2"
   },
-  "devDependencies": {
-  }
+  "devDependencies": {}
 }
