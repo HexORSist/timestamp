@@ -1,1 +1,0 @@
-console.error("Error: Cannot find module '/home/ubuntu/workspace/client/app.jsx' from '/home/ubuntu/workspace'");

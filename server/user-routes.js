@@ -5,11 +5,11 @@ var express = require('express'),
 var app = module.exports = express.Router();
 
 app.get('/', function(req, res) {
-  return res.status(400).sendFile(process.cwd() + "/public/index.html");
+  return res.status(200).sendFile(process.cwd() + "/public/index.html");
 });
 
-app.get('/date/*', function(req, res) {
+app.get('/:date', function(req, res) {
 
-  return res.status(400).send(userSV.digesttime(req.params[0]));
+  return res.status(200).send(userSV.digesttime(req.params.date));
 
 });
