@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Timestamp Application</title>
+  <link rel="stylesheet" type="text/css" href="/public/index.css">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/4.9.1/bootstrap-social.min.css">
+  
+</head>
+<body>
+
+  <div class="container">
+      <h1>
+          API Basejump: Timestamp microservice
+      </h1>
+      <blockquote>
+          User stories:
+          <ul>1) I can pass a string as a parameter, and it will check to see whether that string contains either a unix timestamp or a natural language date(example: January 1, 2016)</ul>
+          <ul>2) If it does, it returns both the Unix timestamp and the natural language form of that date.</ul>
+          <ul>3) If it does not contain a date or Unix timestamp, it returns null for those properties.</ul>
+      </blockquote>
+      <h3>Example usage:</h3>
+      <code>https://timestamp-ms.herokuapp.com/date/December%2015,%202015</code><br>
+      <code>https://timestamp-ms.herokuapp.com/date/1450137600000</code>
+      <h3>Example output:</h3>
+      <code>
+          {
+            "unix": 1450137600000,
+            "natural": "December 15, 2015"
+          }
+      </code>
+  </div>
+        
+  <div class="footer">
+    <!--footer class="footer"-->
+       <a href="https://github.com/HexORSist/timestamp" target="_blank"
+        class="btn btn-social btn-github">
+        <i class="fa fa-github"></i>GitHub
+        </a>
+    <!--/footer-->
+  </div>
+  
+</body>
+</html>

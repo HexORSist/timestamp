@@ -10,9 +10,9 @@ module.exports = {
         if(Number(thedate))
             thedate = Number(thedate);
             
-        if(moment(thedate).isValid()){
-            unixdate = Number(moment(thedate).valueOf().toString().slice(0,10));
-            normdate = moment(thedate).format("MMMM DD, YYYY");
+        if(moment(new Date(thedate)).isValid()){
+            unixdate = moment(new Date(thedate)).valueOf();
+            normdate = moment(new Date(thedate)).format("MMMM DD, YYYY");
         } else {
             unixdate = null;
             normdate = null;

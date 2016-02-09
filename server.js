@@ -31,9 +31,8 @@ app.use(function(err, req, res, next) {
   app.use(errorhandler())
 }*/
 
+app.use('/public', express.static(process.cwd() + '/public'));
 app.use(require('./server/user-routes'));
-
-app.use('/build', express.static(process.cwd() + '/build'));
 
 var port = process.env.PORT || 3001;
 

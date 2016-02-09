@@ -1,11 +1,11 @@
 {
-  "name": "react-flux-book-club",
+  "name": "unix timestamp",
   "version": "0.0.1",
-  "description": "A book trading app with simple authentication",
+  "description": "A timstamp application",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/HexORSist/book-club.git"
+    "url": "https://github.com/HexORSist/timestamp.git"
   },
   "authors": [
     "Chad Schmidt <cschmidtok@gmail.com>"
@@ -15,9 +15,9 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/HexORSist/book-club.git"
+    "url": "https://github.com/HexORSist/timestamp"
   },
-  "homepage": "https://github.com/HexORSist/book-club.git",
+  "homepage": "https://github.com/HexORSist/timestamp",
   "dependencies": {
     "body-parser": "^1.6.5",
     "cors": "^2.4.1",
