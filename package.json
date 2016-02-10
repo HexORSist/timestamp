@@ -29,6 +29,5 @@
     "express": "^4.8.5",
     "lodash": "^2.4.1",
     "moment": "^2.11.2"
-  },
-  "devDependencies": {}
+  }
 }
