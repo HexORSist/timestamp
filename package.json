@@ -1,8 +1,8 @@
 {
-  "name": "unix timestamp",
+  "name": "thetimestampapp",
   "version": "0.0.1",
   "description": "A timstamp application",
-  "main": "index.js",
+  "main": "server.js",
   "engines": {
     "node": "4.2.4"
   },
